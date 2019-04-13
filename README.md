@@ -1,13 +1,14 @@
-# VIPER-Templete
-Xcode Swift VIPER Templete
+# Localization-Manger Templete
+Xcode Localization Manager TEMPLATE FILE
 
 
 ## How to install
 
 
 ### Manual
-VIPER Templete.xctemplate should be copy to one of the  Application Folder
-avaliable options  
+`Localization Manager.xctemplate` should be copy to one of the  Application Folder
+
+- avaliable options  
 
 1- in Library Folder of machine  "avalible for all user"  "Prefared"
 ```
