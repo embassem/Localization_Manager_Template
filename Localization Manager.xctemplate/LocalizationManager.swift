@@ -75,8 +75,8 @@ class LocalizationManager {
     }
     
     open class func displayNameForLanguage(_ language: Language) -> String {
-        let locale : NSLocale = NSLocale(localeIdentifier: currentLanguage().languageCode)
-        if let displayName = locale.displayName(forKey: NSLocale.Key.identifier, value: language) {
+        let locale : NSLocale = NSLocale(localeIdentifier: language)
+        if let displayName = locale.displayName(forKey: NSLocale.Key.identifier, value: language.languageCode) {
             return displayName
         }
         return String()
