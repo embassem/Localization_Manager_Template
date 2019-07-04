@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
 	@IBOutlet weak var detailDescriptionLabel: UILabel!
 
@@ -28,6 +28,16 @@ class DetailViewController: UIViewController {
 		configureView()
 	}
 
+	@IBAction func buttondidTapped(_ sender: Any) {
+
+		var imagePicker = UIImagePickerController()
+		imagePicker.delegate = self
+		imagePicker.sourceType = .camera;
+		imagePicker.allowsEditing = false
+		self.present(imagePicker, animated: true, completion: nil)
+
+	}
+	
 	var detailItem: NSDate? {
 		didSet {
 		    // Update the view.

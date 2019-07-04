@@ -13,6 +13,14 @@
 		F76C6EA422CDE69000972BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76C6EA222CDE69000972BD8 /* Main.storyboard */; };
 		F76C6EA622CDE69300972BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76C6EA522CDE69300972BD8 /* Assets.xcassets */; };
 		F76C6EA922CDE69300972BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76C6EA722CDE69300972BD8 /* LaunchScreen.storyboard */; };
+		F76C6EB922CDE6E800972BD8 /* TemplateIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76C6EB122CDE6E800972BD8 /* TemplateIcon@2x.png */; };
+		F76C6EBA22CDE6E800972BD8 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C6EB222CDE6E800972BD8 /* Language.swift */; };
+		F76C6EBB22CDE6E800972BD8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F76C6EB322CDE6E800972BD8 /* Localizable.strings */; };
+		F76C6EBC22CDE6E800972BD8 /* Localization+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C6EB422CDE6E800972BD8 /* Localization+Extension.swift */; };
+		F76C6EBD22CDE6E800972BD8 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C6EB522CDE6E800972BD8 /* LocalizationManager.swift */; };
+		F76C6EBE22CDE6E800972BD8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F76C6EB622CDE6E800972BD8 /* README.md */; };
+		F76C6EBF22CDE6E800972BD8 /* TemplateIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F76C6EB722CDE6E800972BD8 /* TemplateIcon.png */; };
+		F76C6EC022CDE6E800972BD8 /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F76C6EB822CDE6E800972BD8 /* TemplateInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,16 @@
 		F76C6EA522CDE69300972BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76C6EA822CDE69300972BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F76C6EAA22CDE69300972BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76C6EB122CDE6E800972BD8 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		F76C6EB222CDE6E800972BD8 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		F76C6EB322CDE6E800972BD8 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F76C6EB422CDE6E800972BD8 /* Localization+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Localization+Extension.swift"; sourceTree = "<group>"; };
+		F76C6EB522CDE6E800972BD8 /* LocalizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		F76C6EB622CDE6E800972BD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F76C6EB722CDE6E800972BD8 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		F76C6EB822CDE6E800972BD8 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		F76C6EC122CDEF4F00972BD8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		F76C6EC222CDEF4F00972BD8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 		F76C6E9B22CDE69000972BD8 /* LanguageExample */ = {
 			isa = PBXGroup;
 			children = (
+				F76C6EB022CDE6E800972BD8 /* Localization Manager.xctemplate */,
 				F76C6E9C22CDE69000972BD8 /* AppDelegate.swift */,
 				F76C6E9E22CDE69000972BD8 /* MasterViewController.swift */,
 				F76C6EA022CDE69000972BD8 /* DetailViewController.swift */,
@@ -65,6 +84,22 @@
 				F76C6EAA22CDE69300972BD8 /* Info.plist */,
 			);
 			path = LanguageExample;
+			sourceTree = "<group>";
+		};
+		F76C6EB022CDE6E800972BD8 /* Localization Manager.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F76C6EB122CDE6E800972BD8 /* TemplateIcon@2x.png */,
+				F76C6EB222CDE6E800972BD8 /* Language.swift */,
+				F76C6EB322CDE6E800972BD8 /* Localizable.strings */,
+				F76C6EB422CDE6E800972BD8 /* Localization+Extension.swift */,
+				F76C6EB522CDE6E800972BD8 /* LocalizationManager.swift */,
+				F76C6EB622CDE6E800972BD8 /* README.md */,
+				F76C6EB722CDE6E800972BD8 /* TemplateIcon.png */,
+				F76C6EB822CDE6E800972BD8 /* TemplateInfo.plist */,
+			);
+			name = "Localization Manager.xctemplate";
+			path = "../../Localization Manager.xctemplate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +144,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = F76C6E9022CDE69000972BD8;
 			productRefGroup = F76C6E9A22CDE69000972BD8 /* Products */;
@@ -125,7 +161,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76C6EBE22CDE6E800972BD8 /* README.md in Resources */,
 				F76C6EA922CDE69300972BD8 /* LaunchScreen.storyboard in Resources */,
+				F76C6EB922CDE6E800972BD8 /* TemplateIcon@2x.png in Resources */,
+				F76C6EBF22CDE6E800972BD8 /* TemplateIcon.png in Resources */,
+				F76C6EC022CDE6E800972BD8 /* TemplateInfo.plist in Resources */,
+				F76C6EBB22CDE6E800972BD8 /* Localizable.strings in Resources */,
 				F76C6EA622CDE69300972BD8 /* Assets.xcassets in Resources */,
 				F76C6EA422CDE69000972BD8 /* Main.storyboard in Resources */,
 			);
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76C6EBC22CDE6E800972BD8 /* Localization+Extension.swift in Sources */,
 				F76C6EA122CDE69000972BD8 /* DetailViewController.swift in Sources */,
+				F76C6EBA22CDE6E800972BD8 /* Language.swift in Sources */,
 				F76C6E9F22CDE69000972BD8 /* MasterViewController.swift in Sources */,
+				F76C6EBD22CDE6E800972BD8 /* LocalizationManager.swift in Sources */,
 				F76C6E9D22CDE69000972BD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +195,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F76C6EA322CDE69000972BD8 /* Base */,
+				F76C6EC122CDEF4F00972BD8 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,6 +204,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F76C6EA822CDE69300972BD8 /* Base */,
+				F76C6EC222CDEF4F00972BD8 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,6 +216,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -231,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -287,12 +335,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C86JD592M;
 				INFOPLIST_FILE = LanguageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = example.language.LanguageExample;
+				PRODUCT_BUNDLE_IDENTIFIER = example.language;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +353,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C86JD592M;
 				INFOPLIST_FILE = LanguageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = example.language.LanguageExample;
+				PRODUCT_BUNDLE_IDENTIFIER = example.language;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
