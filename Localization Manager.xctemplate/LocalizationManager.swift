@@ -75,7 +75,7 @@ class LocalizationManager {
     }
     
     open class func displayNameForLanguage(_ language: Language) -> String {
-        let locale : NSLocale = NSLocale(localeIdentifier: language)
+        let locale : NSLocale = NSLocale(localeIdentifier: language.languageCode)
         if let displayName = locale.displayName(forKey: NSLocale.Key.identifier, value: language.languageCode) {
             return displayName
         }
@@ -125,9 +125,10 @@ class LocalizationManager {
         LocalizationManager.appLocale = Locale(identifier: language.languageCode)
         
         UIView.appearance().semanticContentAttribute =  language.semantic
-        UITextField.appearance().textAlignment
-            = (language.semantic == UISemanticContentAttribute.forceLeftToRight)
-            ? NSTextAlignment.left : NSTextAlignment.right
+		let newTextAlighnment = (language.semantic == UISemanticContentAttribute.forceLeftToRight)
+			? NSTextAlignment.left : NSTextAlignment.right
+		UILabel.appearance().textAlignment = newTextAlighnment
+		UITextField.appearance().textAlignment = newTextAlighnment
         }
     
     private class func swizzleMethodsForClass(className: AnyClass,
